@@ -1,0 +1,38 @@
+.book-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.loading, .error, .no-results {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+.no-results {
+  color: #666;
+}
+
+/* Dark mode styles */
+.dark-mode .loading,
+.dark-mode .error,
+.dark-mode .no-results {
+  color: #ccc;
+}
+
+.dark-mode .error {
+  color: #ff6b6b;
+}
